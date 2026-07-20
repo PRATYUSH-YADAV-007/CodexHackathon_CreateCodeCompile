@@ -1,2 +1,3 @@
-# CodexHackathon_CreateCodeCompile
-Codex hackathon conducted by OpenAI and Devpost 
+# Read Me
+This file contains the instructions relating to the Codex Hackathon conducted by OpenAI and Devpost.
+
