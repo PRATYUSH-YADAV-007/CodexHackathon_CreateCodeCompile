@@ -17,7 +17,6 @@
 - [Environment variables](#environment-variables)
 - [Usage](#usage)
 - [Milestones](#milestones)
-- [Screenshots](#screenshots)
 - [Future improvements](#future-improvements)
 - [Repository highlights](#repository-highlights)
 - [Acknowledgements](#acknowledgements)
@@ -230,20 +229,6 @@ Open [http://localhost:3000](http://localhost:3000). To use the local Java runne
 | ✅ Milestone 3 | Canonical server-enforced six-stage progression and stage-aware mentor evaluation. |
 | ✅ Milestone 3.5 | Adaptive hint levels, confidence scoring, learner-specific feedback, session persistence, session analytics, and completion summaries. |
 | ✅ Milestone 4 | Interactive Java playground, predefined test execution, local/isolated execution support, and GPT-5.6 AI code review. |
-
-## Screenshots
-
-![Landing page](docs/images/landing.png)
-
-![Mentoring](docs/images/mentoring.png)
-
-![Reasoning](docs/images/reasoning.png)
-
-![Code editor](docs/images/code-editor.png)
-
-![Analytics](docs/images/analytics.png)
-
-![Summary](docs/images/summary.png)
 
 ## Future improvements
 
