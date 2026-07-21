@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1020" viewBox="0 0 1400 1020" role="img" aria-labelledby="title desc">
+  <title id="title">CodeCompile AI workflow</title><desc id="desc">The implemented GPT-5.6 mentoring and code-review workflow from learner input to updated UI.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#172b41" flood-opacity=".12"/></filter>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L0 6L7 3z" fill="#63768a"/></marker>
+    <style>.t{font:700 30px Arial,sans-serif;fill:#172b41}.s{font:400 16px Arial,sans-serif;fill:#5b7084}.h{font:700 15px Arial,sans-serif;fill:#172b41}.p{font:400 13px Arial,sans-serif;fill:#4d6276}.k{font:700 12px Arial,sans-serif;letter-spacing:1px}.n{fill:#fff;stroke-width:1.5;filter:url(#s)}.f{fill:none;stroke:#63768a;stroke-width:2.2;marker-end:url(#a)}.l{font:600 12px Arial,sans-serif;fill:#596e82}</style>
+  </defs>
+  <rect width="1400" height="1020" fill="#f8fbff"/>
+  <text x="60" y="62" class="t">CodeCompile · AI Workflow</text><text x="60" y="91" class="s">Implemented GPT-5.6 mentor evaluation and Java code-review paths</text><line x1="60" y1="117" x2="1340" y2="117" stroke="#d8e2ec"/>
+  <rect x="70" y="155" width="1260" height="160" rx="25" fill="#eff7ff" stroke="#7dbdf3" stroke-width="1.5" stroke-dasharray="8 7"/><text x="100" y="189" class="k" fill="#1674c7">CLIENT INPUT</text>
+  <rect x="110" y="215" width="470" height="67" rx="14" class="n" stroke="#73b8f0"/><text x="136" y="242" class="h">✎ Learner submits reasoning</text><text x="136" y="264" class="p">stage · response · conversation history · failed attempts</text>
+  <rect x="820" y="215" width="470" height="67" rx="14" class="n" stroke="#73b8f0"/><text x="846" y="242" class="h">☕ Learner requests code review</text><text x="846" y="264" class="p">Java submission + observed execution result</text>
+  <path d="M345 282V365" class="f"/><path d="M1055 282V365" class="f"/>
+  <rect x="70" y="350" width="1260" height="155" rx="25" fill="#effbf5" stroke="#65c797" stroke-width="1.5" stroke-dasharray="8 7"/><text x="100" y="384" class="k" fill="#178454">NEXT.JS API ROUTES</text>
+  <rect x="110" y="408" width="470" height="65" rx="14" class="n" stroke="#63c591"/><text x="136" y="434" class="h">POST /api/mentor</text><text x="136" y="457" class="p">Request validation · hint level = min(failed attempts, 3)</text>
+  <rect x="820" y="408" width="470" height="65" rx="14" class="n" stroke="#63c591"/><text x="846" y="434" class="h">POST /api/playground/review</text><text x="846" y="457" class="p">Code + execution-result validation</text>
+  <path d="M345 473V560" class="f"/><path d="M1055 473V560" class="f"/>
+  <rect x="70" y="545" width="1260" height="190" rx="25" fill="#f7f1ff" stroke="#ad8add" stroke-width="1.5" stroke-dasharray="8 7"/><text x="100" y="579" class="k" fill="#7650ba">OPENAI RESPONSES API · OPENAI SDK · GPT-5.6 · LOW REASONING EFFORT</text>
+  <rect x="110" y="607" width="470" height="92" rx="14" class="n" stroke="#ad8add"/><text x="136" y="634" class="h">✦ Mentor evaluation</text><text x="136" y="658" class="p">Socratic prompt + stage evidence + history</text><text x="136" y="680" class="p">Strict JSON Schema: feedback, completion, confidence, summary</text>
+  <rect x="820" y="607" width="470" height="92" rx="14" class="n" stroke="#ad8add"/><text x="846" y="634" class="h">✦ Code review</text><text x="846" y="658" class="p">Supportive, non-solution-revealing review</text><text x="846" y="680" class="p">Strict JSON Schema: quality + complexity + one improvement</text>
+  <path d="M345 699V782" class="f"/><path d="M1055 699V782" class="f"/>
+  <rect x="70" y="767" width="1260" height="165" rx="25" fill="#eefcfb" stroke="#54bdb9" stroke-width="1.5" stroke-dasharray="8 7"/><text x="100" y="801" class="k" fill="#11817e">SERVER RESPONSE PROCESSING + CLIENT UPDATE</text>
+  <rect x="110" y="828" width="470" height="70" rx="14" class="n" stroke="#55bbb7"/><text x="136" y="854" class="h">Six-stage progression &amp; analytics</text><text x="136" y="877" class="p">Validate model output → derive next stage → persist sessionStorage</text>
+  <rect x="820" y="828" width="470" height="70" rx="14" class="n" stroke="#55bbb7"/><text x="846" y="854" class="h">Updated UI</text><text x="846" y="877" class="p">Feedback · confidence · hints · summary · AI code review</text>
+  <path d="M580 863H820" class="f"/><text x="642" y="847" class="l">validated JSON</text>
+  <text x="70" y="980" class="s">Mentor path: prompt → evaluation → stage/analytics update. Review path: code + execution → structured review → playground UI.</text>
+</svg>
