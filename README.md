@@ -29,7 +29,12 @@
 Many beginners jump straight into code without first developing a clear model of the problem, its constraints, and the trade-offs in a solution. CodeCompile addresses that gap with a guided Two Sum practice session that asks learners to articulate their reasoning before they implement.
 
 The application matters because it treats programming practice as a learning process, not just an answer-generation task. It is aimed at early-stage programmers and learners building foundational problem-solving skills, especially those who benefit from structured prompts and feedback instead of a complete solution.
-
+<p align="center">
+  <img src="docs/images/landingPage_1.png" width="900"/>
+</p>
+<p align="center">
+  <img src="docs/images/landingPage_2 (1).png" width="900"/>
+</p>
 ## Features
 
 - A polished landing page that presents the guided-learning approach and links directly to a practice session.
@@ -82,7 +87,9 @@ Mentor, analytics, playground, review, and summary UI
 The session page keeps the active stage and analytics in React state. When a learner submits reasoning, the client sends the stage, response, prior conversation, and incomplete-attempt count to `POST /api/mentor`. The server validates the request, derives the hint level, asks GPT-5.6 for a schema-constrained evaluation, validates that evaluation, and derives the next stage from the canonical stage list. The client then updates the feedback, progress, analytics, and browser session storage.
 
 The playground follows a separate path. `POST /api/playground/execute` validates and runs Java locally in development or forwards it to an isolated execution service when configured. Its structured test result can then be sent with the submission to `POST /api/playground/review`, where GPT-5.6 produces a constrained, non-solution-revealing review for the UI.
-
+<p align="center">
+  <img src="docs/images/architecture Digram.jpg" width="900"/>
+</p>
 ## Six-stage learning pipeline
 
 CodeCompile uses exactly six stages. A learner advances only when the server reports that the current stage is complete; otherwise, the learner remains at the same stage and receives a progressively more concrete hint.
@@ -115,7 +122,9 @@ Session summary generated when the completed Code stage ends the session
 ```
 
 The mentor is explicitly instructed to avoid complete solutions and complete code. It uses the active stage’s evidence requirement, prior conversation, and hint level to return focused questions, feedback, and a confidence score.
-
+<p align="center">
+  <img src="docs/images/ai-workflow.svg" width="900"/>
+</p>
 ## Project structure
 
 ```text
@@ -192,7 +201,15 @@ Open [http://localhost:3000](http://localhost:3000). To use the local Java runne
 | `OPENAI_API_KEY` | Yes for mentoring and AI review | Server-only OpenAI API key used by the mentor and code-review routes. |
 | `EXECUTION_SERVICE_URL` | Required for production code execution | URL of an isolated container/VM Java runner. When present, execution requests are forwarded to it. |
 | `ALLOW_LOCAL_JAVA_EXECUTION` | Optional in development | Set to `false` to disable local Java execution. It defaults to enabled in development and is ignored in production, where an isolated service is required. |
-
+<p align="center">
+  <img src="docs/images/GuidedSessions.png" width="900"/>
+</p>
+<p align="center">
+  <img src="docs/images/guidedSession1.png" width="900"/>
+</p>
+<p align="center">
+  <img src="docs/images/guidedSession2.png" width="900"/>
+</p>
 ## Usage
 
 1. Open the landing page and choose **Start practicing** or **Try the guided session**.
