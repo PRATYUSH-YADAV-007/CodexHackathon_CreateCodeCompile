@@ -19,6 +19,7 @@
 - [Milestones](#milestones)
 - [Future improvements](#future-improvements)
 - [Repository highlights](#repository-highlights)
+- [Building with Codex](## Building with Codex)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -244,6 +245,18 @@ CodeCompile separates the learner-facing interface, API boundaries, mentoring ru
 The AI evaluation pipeline is deliberately structured: each GPT-5.6 response is constrained by a JSON Schema and checked again before being returned. That design gives reusable components predictable data for confidence, feedback, analytics, review, and summaries. The playground is similarly modular: its test definitions, execution contract, and runner are independent, so a production isolated service can replace local execution without changing the UI.
 
 This clean API design supports scalability: Next.js route handlers can remain stateless, client session state is kept in browser storage, and execution can be moved behind `EXECUTION_SERVICE_URL` to an isolated container or VM service. The Socratic, hint-escalating mentor is an intentional product decision that keeps the learner’s reasoning at the center of the experience.
+
+## Building with Codex
+CodeCompile was developed through a collaborative workflow between the developer, Codex, and GPT-5.6.
+Codex served as an AI software engineering partner throughout the project. Rather than generating the entire application automatically, it accelerated implementation by helping build production-ready components, refactor code, resolve bugs, and validate architectural decisions.
+Key contributions from Codex included:
+- Implementing the GPT-5.6 integration using the OpenAI Responses API.
+- Building and refining the six-stage guided learning workflow.
+- Developing the interactive Java playground and execution pipeline.
+- Implementing AI-powered code review and structured response validation.
+- Improving project structure, modularity, and maintainability.
+- Assisting with debugging, testing, and documentation.
+Engineering decisions, product direction, UX design, prompt design, and the overall learning experience were intentionally driven by the project creator. GPT-5.6 powers the adaptive mentoring experience, while Codex significantly accelerated development by acting as an AI engineering collaborator. The final application represents a combination of human-driven product design, AI-assisted software engineering, and iterative refinement.
 
 ## Acknowledgements
 
