@@ -1,4 +1,4 @@
-export const learningStages = ["Understand", "Assumptions", "Edge cases", "Approach", "Data structure", "Algorithm", "Complexity", "Implement", "Reflect"];
+import { learningStages } from "@/lib/learning-stages";
 
 export function LearningStage({ current = 0 }: { current?: number }) {
   return <div className="overflow-x-auto pb-2"><ol className="flex min-w-max items-center gap-1">
