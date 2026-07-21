@@ -20,7 +20,7 @@ Check out the [video](https://vimeo.com/1211634576?share=copy&fl=sv&fe=ci) on vi
 - [Milestones](#milestones)
 - [Future improvements](#future-improvements)
 - [Repository highlights](#repository-highlights)
-- [Building with Codex](## Building with Codex)
+- [Building with Codex](#Building with Codex)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
