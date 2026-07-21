@@ -40,6 +40,19 @@ npm install
 npm run dev
 ```
 
+## Java playground setup
+
+The playground runs Java locally during development. Install a JDK (not only a JRE) and make both `java` and `javac` available on your `PATH`:
+
+```bash
+java -version
+javac -version
+```
+
+No execution-service configuration is required for local development. `ALLOW_LOCAL_JAVA_EXECUTION` defaults to enabled in development; set it to `false` only when you want to disable the local runner. The runner compiles each submission in a temporary directory, applies time, memory, and output limits, and removes the directory after execution.
+
+For production, provide `EXECUTION_SERVICE_URL` for an isolated container or VM execution service. Local process execution is never enabled in production.
+
 ## AI mentor setup
 
 1. Copy `.env.local.example` to `.env.local`.
