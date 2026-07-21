@@ -1,3 +1,4 @@
+Check out the [video](https://vimeo.com/1211634576?share=copy&fl=sv&fe=ci) on vimeo
 # CodeCompile
 
 > **Think it through. Then code it.** An adaptive, Socratic learning workspace that helps learners build computational-thinking habits before implementation.
@@ -267,4 +268,4 @@ Engineering decisions, product direction, UX design, prompt design, and the over
 
 ## License
 
-MIT — see [LICENSE](LICENSE). This is a placeholder declaration for the project submission.
+MIT — see [LICENSE](LICENSE).
