@@ -21,7 +21,6 @@
 - [Repository highlights](#repository-highlights)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
-- [Demo](#demo)
 
 ## Overview
 
@@ -256,8 +255,3 @@ This clean API design supports scalability: Next.js route handlers can remain st
 ## License
 
 MIT — see [LICENSE](LICENSE). This is a placeholder declaration for the project submission.
-
-## Demo
-
-- Live URL: _To be added_
-- Demo video: _To be added_
