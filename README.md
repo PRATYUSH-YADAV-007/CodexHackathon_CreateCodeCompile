@@ -35,6 +35,7 @@ The application matters because it treats programming practice as a learning pro
 <p align="center">
   <img src="docs/images/landingPage_2 (1).png" width="900"/>
 </p>
+
 ## Features
 
 - A polished landing page that presents the guided-learning approach and links directly to a practice session.
