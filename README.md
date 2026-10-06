@@ -91,6 +91,7 @@ The playground follows a separate path. `POST /api/playground/execute` validates
 <p align="center">
   <img src="docs/images/architecture Digram.jpg" width="900"/>
 </p>
+
 ## Six-stage learning pipeline
 
 CodeCompile uses exactly six stages. A learner advances only when the server reports that the current stage is complete; otherwise, the learner remains at the same stage and receives a progressively more concrete hint.
@@ -126,6 +127,7 @@ The mentor is explicitly instructed to avoid complete solutions and complete cod
 <p align="center">
   <img src="docs/images/ai-workflow.svg" width="900"/>
 </p>
+
 ## Project structure
 
 ```text
@@ -211,6 +213,7 @@ Open [http://localhost:3000](http://localhost:3000). To use the local Java runne
 <p align="center">
   <img src="docs/images/guidedSession2.png" width="900"/>
 </p>
+
 ## Usage
 
 1. Open the landing page and choose **Start practicing** or **Try the guided session**.
